@@ -1,0 +1,43 @@
+// @use "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$white: #d7e2f1;
+$blue: #89c8e2;
+
+.white {
+  color: $white;
+}
+.blue {
+  color: $blue;
+}
+
+.background {
+  background-color: #277cef;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* For Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
